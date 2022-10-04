@@ -573,7 +573,7 @@ footer textarea {
     color: white;
 }
 #criar, #logar, #recuperarSenha {
-    color: red;
+    color: rgb(255, 0, 0);
     cursor: pointer;
     padding: 0 0 0 3px;
 }
@@ -766,25 +766,43 @@ footer textarea {
     .filmes {
         grid-template-columns: repeat(2, 1fr);
        }
+    .Login, .Registro {
+        width: 80vw;
+    }
+    .senhaL input, .emailL input, .emailR input, .nomeR input, .senhaR input, .confirmaSenhaR input {
+        width: 100%;
+        margin-left: -25px;
+    }
+    .mostrarSenha, .esconderSenha {
+        margin-left: 60vw;
+    }
+}
+@media (max-width: 490px) {
+    .mostrarSenha, .esconderSenha {
+        margin-left: 55vw;
+    }
+}
+@media (max-width: 580px) {
     .ResgatarSenha {
         width: 80vw;
-        margin: 50px auto;
-    }
-    .ResgatarSenha h1 {
-        font-size: 6vw;
     }
     .ResgatarSenha input {
-        width: 58vw;
+        width: 100%;
+        margin-left: -25px;
     }
-    .ResgatarSenha .botao {
-        width: 25vw;
-    }
-    .ResgatarSenha .cadastro {
-        justify-content: center;
-        margin: 10px;
-        font-size: 15px;
-    }
-    }
+   .ResgatarSenha h1 {
+    font-size: 22px;
+   } 
+   .ResgatarSenha .botao {
+    width: 100px;
+   }
+   .ResgatarSenha #botao {
+    font-size: 13px;
+   }
+   .ResgatarSenha .cadastro {
+    font-size: 15px;
+   }
+}
 @media (max-width: 460px) {
     .pesquisa input{
         width: 100%;
@@ -806,7 +824,12 @@ footer textarea {
     .download img {
         margin: 0 auto;
     }
-
+    
+}
+@media (max-width: 380px) {
+    .mostrarSenha, .esconderSenha {
+        margin-left: 50vw;
+    }
 }
 @media (max-width: 365px) {
     .filmes {
@@ -814,6 +837,20 @@ footer textarea {
        }
     .ddd {
         width: 60%;
+    }
+}
+@media (max-width: 326px) {
+    .Login .cadastro,.Registro .cadastro {
+        font-size: 13px;
+    }
+    .mostrarSenha, .esconderSenha {
+        margin-left: 45vw;
+    }
+    .Login .botao, .Registro .botao {
+        width: 100px;
+    }
+    .Login #botao, .Registro #botao {
+        font-size: 13px;
     }
 }
 @media (max-width: 320px) {
@@ -847,12 +884,41 @@ footer textarea {
 
     }
 }
+@media (max-width: 280px) {
+    .ResgatarSenha h1 {
+        font-size: 15px;
+       }
+    .ResgatarSenha .cadastro {
+        display: block;
+        text-align: center;
+        font-size: 11px;
+    }
+    .Login .cadastro,.Registro .cadastro {
+        display: block;
+        text-align: center;
+        margin-top: 3px;
+    }
+    .mostrarSenha, .esconderSenha {
+        margin-left: 40vw;
+    }
+    .Registro h1, .Login h1 {
+        font-size: 25px;
+    }
+}
+@media (max-width: 240px) {
+    .mostrarSenha, .esconderSenha {
+        margin-left: 35vw;
+    }
+}
 @media (max-width: 220px) {
     .filme p {
         font-size: 10px;
     }
     .colecao p {
         font-size: 15px;
+    }
+    .mostrarSenha, .esconderSenha {
+        margin-left: 25vw;
     }
 }
 @media (max-width: 190px) {
@@ -862,9 +928,21 @@ footer textarea {
     .colecao .filme {
         margin: 10px;
     }
+    .Registro h1 {
+        font-size: 20px;
+    }
+}
+@media (max-width: 180px) {
+    .mostrarSenha, .esconderSenha {
+        margin-left: 16vw;
+    }
 }
 @media (max-width: 151px) {
     .filme{
         margin: 10px 10px 10px -10px;
+    }
+    .ResgatarSenha input {
+        width: 130%;
+        margin-left: -35px;
     }
 }

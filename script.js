@@ -25,7 +25,7 @@ function registrar (nomeR, emailR, senhaR, confirmaSenhaR){
             }
         }
 
-        if(emailR == "adm") {
+        if(emailR == "adm2002@gmail.com") {
             window.alert("Conta Privada")
         } else {
 
@@ -92,7 +92,7 @@ function logar(emailL, senhaL){
     if (emailL.trim() != "" && senhaL.trim() != "") {
 
         let loginValido = 0
-        if(emailL == "adm" && senhaL == "2002") {
+        if(emailL == "adm2002@gmail.com" && senhaL == "2002") {
 
             location.href = "index.html"
     
@@ -272,7 +272,7 @@ function resgatarSenha() {
             }
         }
 
-        if(emailResgate == "adm") {
+        if(emailResgate == "adm2002@gmail.com") {
             window.alert("Conta privada")
             document.getElementById('emailResgate').value =""
         } else {
